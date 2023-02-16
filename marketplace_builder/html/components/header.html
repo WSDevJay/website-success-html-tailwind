@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Components | Header</title>
+    <link rel="stylesheet" href="/marketplace_builder/assets/css/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://uploads.prod01.london.platform-os.com/instances/190/assets/js/vendor/iconify.min.js"></script>
+  </head>
+  <body class="h-[200vh] bg-slate-400">
+    <!-- Component Starts Here -->
+
+    <header class="py-4 lg:py-8 w-full fixed top-0 transition-all" data-header>
+      <div class="max-w-screen-base mx-auto px-3">
+        <div class="flex flex-col lg:flex-row lg:items-end gap-2">
+          <div
+            class="flex items-center justify-between w-full lg:w-auto lg:inline-block lg:flex-none"
+          >
+            <!-- Logo -->
+            <div>
+              <a href="/">
+                <img
+                  src="https://websitesuccess.mo.cloudinary.net/ws/images/build/2023/ws-logo-white.png"
+                  class="w-36 lg:w-44"
+                  alt="Website Success"
+                  data-lazyloaded="true"
+                  data-logo-white
+                />
+                <img
+                  src="https://uploads.prod01.london.platform-os.com/instances/190/assets/images/build/2023/ws-logo-colour.svg?updated=1676524232624"
+                  class="w-36 lg:w-44 hidden"
+                  alt="Website Success"
+                  data-lazyloaded="true"
+                  data-logo-colour
+                />
+              </a>
+            </div>
+            <!-- Top Nav Mobile -->
+            <div class="lg:hidden">
+              <ul
+                class="flex items-center justify-end gap-5 [&>li>a]:text-white"
+                data-top-nav-mobile
+              >
+                <li>
+                  <a
+                    href="tel:01243 888 555"
+                    class="font-black text-xl sm:text-2xl hover:text-primary-yellow"
+                  >
+                    <span class="iconify" data-icon="fa-solid:phone"></span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="font-black text-2xl sm:text-3xl hover:text-primary-yellow cursor-pointer"
+                    data-nav-container-toggler
+                  >
+                    <span class="iconify" data-icon="zondicons:menu"></span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Nav Container -->
+          <div
+            class="flex-1 lg:border-b-2 border-white lg:pb-1 transition-all -- drop-shadow-lg absolute z-20 bg-white w-9/12 sm:w-1/2 h-screen top-0 right-[-100%] p-4 -- lg:transition-none lg:translate-x-0 lg:bg-transparent lg:w-full lg:h-auto lg:static lg:p-0 lg:drop-shadow-none"
+            data-nav-container
+          >
+            <!-- Nav Mobile Close Button -->
+            <div class="flex justify-end mb-2 lg:hidden">
+              <span
+                class="text-primary-dark text-xl sm:text-2xl cursor-pointer hover:opacity-80"
+                data-nav-container-close
+              >
+                <span class="iconify" data-icon="zondicons:close"></span>
+              </span>
+            </div>
+            <!-- Top Nav -->
+            <div class="hidden lg:block">
+              <ul
+                class="flex items-end justify-end gap-5 [&>li>a]:text-white"
+                data-top-nav
+              >
+                <li>
+                  <a
+                    href="tel:01243 888 555"
+                    class="font-black text-base hover:text-primary-yellow"
+                  >
+                    <span class="flex items-center gap-1.5">
+                      <span class="iconify" data-icon="fa-solid:phone"></span>
+                      <span>01243 888 555</span>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- Primary Nav -->
+            <div>
+              <ul
+                class="flex flex-col gap-2 lg:flex-row lg:items-end lg:justify-end lg:gap-0 [&>li>a]:text-primary-blue lg:[&>li>a]:text-white [&>li:last-child>a]:pr-0"
+                data-primary-nav
+              >
+                <li>
+                  <a
+                    href=""
+                    class="uppercase font-black text-2xl hover:text-primary-yellow lg:px-2.5"
+                    >Design</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href=""
+                    class="uppercase font-black text-2xl hover:text-primary-yellow lg:px-2.5"
+                    >Build</a
+                  >
+                </li>
+                <li class="relative group">
+                  <a
+                    href=""
+                    class="uppercase font-black text-2xl max-lg:hover:text-primary-yellow lg:group-hover:text-white lg:group-hover:bg-primary-blue rounded-t-md lg:px-2.5"
+                    >Market</a
+                  >
+                  <div
+                    class="lg:w-64 lg:absolute lg:left-1/2 lg:top-full lg:-translate-x-1/2 bg-white lg:border-[10px] lg:border-primary-blue px-2 py-1 lg:py-3 rounded-md lg:hidden lg:group-hover:block"
+                  >
+                    <ul class="lg:text-center">
+                      <li>
+                        <a
+                          href=""
+                          class="text-primary-blue uppercase font-black text-base hover:text-primary-yellow lg:hover:text-primary-dark"
+                          >PPC</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href=""
+                          class="text-primary-blue uppercase font-black text-base hover:text-primary-yellow lg:hover:text-primary-dark"
+                          >SEO</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href=""
+                          class="text-primary-blue uppercase font-black text-base hover:text-primary-yellow lg:hover:text-primary-dark"
+                          >CONTENT</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href=""
+                          class="text-primary-blue uppercase font-black text-base hover:text-primary-yellow lg:hover:text-primary-dark"
+                          >STRATEGY</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <a
+                    href=""
+                    class="text-white uppercase font-black text-base hover:text-primary-yellow lg:px-2.5"
+                    >Portfolio</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href=""
+                    class="text-white uppercase font-black text-base hover:text-primary-yellow lg:px-2.5"
+                    >About</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href=""
+                    class="text-white uppercase font-black text-base hover:text-primary-yellow lg:px-2.5"
+                    >Blog</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href=""
+                    class="text-white uppercase font-black text-base hover:text-primary-yellow lg:px-2.5"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Nav Container Backdrop -->
+          <div
+            class="bg-black/40 fixed w-full h-screen inset-0 z-10 hidden lg:!hidden"
+            data-nav-container-backdrop
+          ></div>
+        </div>
+      </div>
+    </header>
+
+    <script>
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 30 ||
+          document.documentElement.scrollTop > 30
+        ) {
+          /* Header */
+          document.querySelector("[data-header]").classList.add("bg-white");
+          document.querySelector("[data-header]").classList.add("lg:py-5");
+          document.querySelector("[data-header]").classList.remove("lg:py-8");
+          document.querySelector("[data-logo-white]").classList.add("hidden");
+          document.querySelector("[data-header]").classList.add("drop-shadow");
+          /* Logo */
+          document
+            .querySelector("[data-logo-colour]")
+            .classList.remove("hidden");
+          /* Top Nav */
+          document
+            .querySelector("[data-top-nav]")
+            .classList.add("[&>li>a]:text-primary-blue");
+          document
+            .querySelector("[data-top-nav]")
+            .classList.remove("[&>li>a]:text-white");
+          /* Top Nav Mobile */
+          document
+            .querySelector("[data-top-nav-mobile]")
+            .classList.add("[&>li>a]:text-primary-blue");
+          document
+            .querySelector("[data-top-nav-mobile]")
+            .classList.remove("[&>li>a]:text-white");
+          /* Primary Nav */
+          document
+            .querySelector("[data-primary-nav]")
+            .classList.add("lg:[&>li>a]:text-primary-blue");
+          document
+            .querySelector("[data-primary-nav]")
+            .classList.remove("lg:[&>li>a]:text-white");
+          /* Nav Container */
+          document
+            .querySelector("[data-nav-container]")
+            .classList.remove("border-white");
+          document
+            .querySelector("[data-nav-container]")
+            .classList.add("border-primary-blue");
+        } else {
+          /* Header */
+          document.querySelector("[data-header]").classList.remove("lg:py-5");
+          document.querySelector("[data-header]").classList.add("lg:py-8");
+          document.querySelector("[data-header]").classList.remove("bg-white");
+          document
+            .querySelector("[data-header]")
+            .classList.remove("drop-shadow");
+          /* Logo */
+          document
+            .querySelector("[data-logo-white]")
+            .classList.remove("hidden");
+          document.querySelector("[data-logo-colour]").classList.add("hidden");
+          /* Top Nav */
+          document
+            .querySelector("[data-top-nav]")
+            .classList.remove("[&>li>a]:text-primary-blue");
+          document
+            .querySelector("[data-top-nav]")
+            .classList.add("[&>li>a]:text-white");
+          /* Top Nav Mobile */
+          document
+            .querySelector("[data-top-nav-mobile]")
+            .classList.remove("[&>li>a]:text-primary-blue");
+          document
+            .querySelector("[data-top-nav-mobile]")
+            .classList.add("[&>li>a]:text-white");
+          /* Primary Nav */
+          document
+            .querySelector("[data-primary-nav]")
+            .classList.remove("lg:[&>li>a]:text-primary-blue");
+          document
+            .querySelector("[data-primary-nav]")
+            .classList.add("lg:[&>li>a]:text-white");
+          /* Nav Container */
+          document
+            .querySelector("[data-nav-container]")
+            .classList.add("border-white");
+          document
+            .querySelector("[data-nav-container]")
+            .classList.remove("border-primary-blue");
+        }
+      }
+    </script>
+
+    <script>
+      const $data_nav_container = document.querySelector(
+        "[data-nav-container]"
+      );
+      const $data_nav_container_toggler = document.querySelector(
+        "[data-nav-container-toggler]"
+      );
+      const $data_nav_container_close = document.querySelector(
+        "[data-nav-container-close]"
+      );
+      const $data_nav_container_backdrop = document.querySelector(
+        "[data-nav-container-backdrop]"
+      );
+
+      $data_nav_container_toggler.addEventListener("click", () => {
+        $data_nav_container.classList.add("right-0");
+        $data_nav_container.classList.remove("right-[-100%]");
+        $data_nav_container_backdrop.classList.remove("hidden");
+      });
+      $data_nav_container_close.addEventListener("click", () => {
+        $data_nav_container.classList.remove("right-0");
+        $data_nav_container.classList.add("right-[-100%]");
+        $data_nav_container_backdrop.classList.add("hidden");
+      });
+      $data_nav_container_backdrop.addEventListener("click", () => {
+        $data_nav_container.classList.remove("right-0");
+        $data_nav_container.classList.add("right-[-100%]");
+        $data_nav_container_backdrop.classList.add("hidden");
+      });
+    </script>
+
+    <!-- Component Ends Here -->
+  </body>
+</html>
