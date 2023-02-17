@@ -2,3 +2,130 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Wave Bg */
+.is-wave {
+  background: linear-gradient(
+      to bottom,
+      #000f1e 0,
+      rgba(0, 15, 30, 0) 33%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    url(https://websitesuccess.mo.cloudinary.net/ws/images/build/2023/inner-pages-hero-bg.png)
+      no-repeat center center/cover;
+}
+.is-wave::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 90rem;
+  background: url(https://websitesuccess.mo.cloudinary.net/ws/images/build/2023/graphic-circles-inner-pages-hero.png);
+  background-repeat: repeat;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  left: 0;
+  top: 0;
+  z-index: 5;
+  pointer-events: none;
+}
+@media screen and (max-width: 768px) {
+  .is-wave::before {
+    background-size: unset;
+  }
+}
+
+/* Curve */
+.curve {
+  background: url(https://websitesuccess.mo.cloudinary.net/ws/images/build/2023/curve.png)
+    no-repeat top/101%;
+}
+
+/* Curve Gray */
+.curve-gray {
+  background: url(https://websitesuccess.mo.cloudinary.net/ws/images/build/2023/curve-dark-02.png)
+    no-repeat top/101%;
+}
+
+/* Faqs Circle Graphic */
+.graphic-circle-faqs::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: url(https://websitesuccess.mo.cloudinary.net/ws/images/build/2023/graphic-circles-faqs.png);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+}
+
+/* Faqs Background Clip */
+.bg-clip-faqs {
+  clip-path: ellipse(120% 100% at 50% 100%);
+}
+@media (max-width: 768px) {
+  .bg-clip-faqs {
+    clip-path: ellipse(240% 100% at 50% 100%);
+  }
+}
+
+/* Get Started Background Clip */
+.bg-clip-get-started::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  clip-path: ellipse(120% 100% at 50% 100%);
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+@media (max-width: 768px) {
+  .bg-clip-get-started::before {
+    clip-path: ellipse(240% 100% at 50% 100%);
+  }
+}
+
+/* Faqs Content */
+.faqs-content {
+  @apply mb-2;
+}
+.faqs-content p {
+  @apply text-primary-yellow font-black text-base;
+}
+
+/* Get Started Box Arrow */
+.has-arrow::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 40px 31px 0;
+  border-color: transparent #ebecec transparent transparent;
+  position: absolute;
+  top: 30%;
+  left: -30px;
+}
+@media (max-width: 768px) {
+  .has-arrow::before {
+    display: none;
+  }
+}
+
+/* Blog Content */
+.content {
+  @apply text-primary-dark;
+}
+.content h3 {
+  @apply text-xl sm:text-2xl font-black sm:mb-1;
+}
+.content h3:not(:first-child) {
+  @apply mt-6;
+}
+.content p:not(:last-child) {
+  @apply text-base mb-2;
+}
+.content a,
+.content p a {
+  @apply underline text-primary-blue/80 hover:text-primary-blue;
+}

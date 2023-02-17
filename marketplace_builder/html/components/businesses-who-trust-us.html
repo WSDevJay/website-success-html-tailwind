@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Components | Brands</title>
+    <link rel="stylesheet" href="/marketplace_builder/assets/css/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://uploads.prod01.london.platform-os.com/instances/190/assets/js/vendor/iconify.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <!-- Component Starts Here -->
+
+    <section class="pt-[122px] pb-[82px] -- curve-gray">
+      <div class="max-w-screen-base mx-auto px-3">
+        <h3
+          class="uppercase font-black text-primary-blue text-xl sm:text-2xl text-center"
+        >
+          businesses who trust us with their brand
+        </h3>
+      </div>
+      <div class="mt-6 md:mt-10">
+        <div class="swiper brands">
+          <div class="swiper-wrapper items-center">
+            <div class="swiper-slide">
+              <img
+                src="https://uploads.prod01.london.platform-os.com/instances/190/assets/images/build/2023/brands/money-if-you-die.png"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://uploads.prod01.london.platform-os.com/instances/190/assets/images/build/2023/brands/n-pacey-ltd.png"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://uploads.prod01.london.platform-os.com/instances/190/assets/images/build/2023/brands/octicards.png"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://uploads.prod01.london.platform-os.com/instances/190/assets/images/build/2023/brands/philip-e-west.png"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://uploads.prod01.london.platform-os.com/instances/190/assets/images/build/2023/brands/slugs-a-gogo.png"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://uploads.prod01.london.platform-os.com/instances/190/assets/images/build/2023/brands/southdown-velo.png"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://uploads.prod01.london.platform-os.com/instances/190/assets/images/build/2023/brands/philip-e-west.png"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://uploads.prod01.london.platform-os.com/instances/190/assets/images/build/2023/brands/octicards.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const swiper = new Swiper(".swiper.brands", {
+        loop: true,
+        slidesPerView: 2,
+        spaceBetween: 30,
+        centeredSlides: true,
+        breakpoints: {
+          640: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 5,
+            spaceBetween: 40,
+          },
+          1280: {
+            slidesPerView: 6,
+            spaceBetween: 40,
+          },
+          1536: {
+            slidesPerView: 7,
+            spaceBetween: 60,
+          },
+        },
+        autoplay: {
+          delay: 5000,
+          speed: 3000,
+        },
+      });
+    </script>
+
+    <!-- Component Ends Here -->
+  </body>
+</html>

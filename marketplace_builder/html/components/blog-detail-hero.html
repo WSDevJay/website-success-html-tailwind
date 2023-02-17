@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Component</title>
+    <title>Components | Blog Detail Hero</title>
     <link rel="stylesheet" href="/marketplace_builder/assets/css/output.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,13 +13,55 @@
       rel="stylesheet"
     />
     <script src="https://uploads.prod01.london.platform-os.com/instances/190/assets/js/vendor/iconify.min.js"></script>
-    <!-- https://websitesuccess.mo.cloudinary.net/ws -->
   </head>
   <body>
     <!-- Component Starts Here -->
 
-    <section>
-      <div class="max-w-screen-base mx-auto px-3"></div>
+    <section class="pt-48 pb-40 bg-gray-900 relative -- is-wave">
+      <div class="max-w-screen-base mx-auto px-3">
+        <div class="grid items-center grid-cols-12 gap-2 lg:gap-0">
+          <div class="col-span-full lg:col-span-4">
+            <figure class="pr-4">
+              <img
+                class="w-16 lg:w-72"
+                src="https://websitesuccess.mo.cloudinary.net/ws/images/team-pictures/caitlin-mccann.png?tx=c_scale,w_400"
+                alt="Louise Hopkins"
+              />
+            </figure>
+          </div>
+          <div class="col-span-full lg:col-span-8">
+            <div
+              class="flex flex-col md:flex-row md:items-center md:justify-between gap-2"
+            >
+              <!-- Author -->
+              <span class="flex items-center gap-1.5 text-white text-base">
+                <span class="font-extrabold">By Caitlin McCann</span>
+                <span class="font-light">|</span>
+                <span class="font-light">Apr 26, 2022 </span>
+              </span>
+              <!-- Min read -->
+              <span class="flex items-center gap-1.5 text-white text-base">
+                <span>
+                  <span class="iconify" data-icon="fa-solid:stopwatch"></span>
+                </span>
+                <span class="font-light">2 min read</span>
+              </span>
+            </div>
+            <div class="border-t border-primary-blue mt-5 pt-4">
+              <h1
+                class="uppercase font-extralight text-2xl lg:text-3xl text-white mb-2"
+              >
+                why is email marketing effective? do I need it?
+              </h1>
+              <p class="font-extralight text-xl lg:text-2xl text-white">
+                Email marketing once dominated the industry before the takeover
+                of Google Ads and social media advertising. But has email lost
+                its way since? Or is it still a valuable method in 2022?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Component Ends Here -->

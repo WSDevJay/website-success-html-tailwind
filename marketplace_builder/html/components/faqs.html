@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Components | Faqs</title>
+    <link rel="stylesheet" href="/marketplace_builder/assets/css/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://uploads.prod01.london.platform-os.com/instances/190/assets/js/vendor/iconify.min.js"></script>
+  </head>
+  <body class="py-10">
+    <!-- Component Starts Here -->
+
+    <section
+      class="pt-14 pb-[120px] bg-primary-dark relative overflow-hidden -- graphic-circle-faqs bg-clip-faqs"
+    >
+      <div class="max-w-4xl mx-auto px-3 relative z-20">
+        <h3
+          class="uppercase font-black text-white text-xl sm:text-2xl text-center mx-auto w-fit relative after:content-[''] after:h-[1px] after:w-9/12 after:bg-primary-yellow after:inline-block after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 pb-5"
+        >
+          frequently asked questions
+        </h3>
+        <div class="mt-6">
+          <div data-accordions>
+            <article data-accordion>
+              <div class="inline-flex items-start gap-2 py-2 cursor-pointer">
+                <span
+                  class="transition-transform mt-0.5 text-primary-yellow text-lg xl:text-xl"
+                  data-accordion-icon
+                >
+                  <span
+                    class="iconify"
+                    data-icon="fa-solid:chevron-circle-down"
+                  ></span>
+                </span>
+                <h3
+                  class="text-lg sm:text-xl !leading-tight uppercase text-white font-black"
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing?
+                </h3>
+              </div>
+              <div class="faqs-content hidden">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Dolorem, quisquam quos temporibus dolores obcaecati voluptas
+                  magni pariatur minima harum reiciendis ratione incidunt
+                  corporis, hic nostrum, labore ad odit rem mollitia.
+                </p>
+              </div>
+            </article>
+            <article data-accordion>
+              <div class="inline-flex items-start gap-2 py-2 cursor-pointer">
+                <span
+                  class="transition-transform mt-0.5 text-primary-yellow text-lg xl:text-xl"
+                  data-accordion-icon
+                >
+                  <span
+                    class="iconify"
+                    data-icon="fa-solid:chevron-circle-down"
+                  ></span>
+                </span>
+                <h3
+                  class="text-lg sm:text-xl !leading-tight uppercase text-white font-black"
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing?
+                </h3>
+              </div>
+              <div class="faqs-content hidden">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Dolorem, quisquam quos temporibus dolores obcaecati voluptas
+                  magni pariatur minima harum reiciendis ratione incidunt
+                  corporis, hic nostrum, labore ad odit rem mollitia.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const $accordions = document.querySelector("[data-accordions]");
+      const $accordion = $accordions.querySelectorAll("[data-accordion]");
+      $accordion.forEach((e, i) => {
+        const $accordion_header = e.children[0];
+        const $accordion_header_icon = e.children[0].children[0];
+        const $accordion_body = e.children[1];
+        if (i == 0) {
+          $accordion_header_icon.classList.add("-rotate-180");
+          $accordion_body.classList.remove("hidden");
+        }
+        $accordion_header.addEventListener("click", (el) => {
+          if ($accordion_header_icon.classList.contains("-rotate-180")) {
+            $accordion.forEach((el) => {
+              const $g_accordion_body = el.children[1];
+              const $g_accordion_header_icon = el.children[0].children[0];
+              $g_accordion_body.classList.add("hidden");
+              $g_accordion_header_icon.classList.remove("-rotate-180");
+            });
+            $accordion_header_icon.classList.remove("-rotate-180");
+            $accordion_body.classList.add("hidden");
+          } else {
+            $accordion.forEach((el) => {
+              const $g_accordion_body = el.children[1];
+              const $g_accordion_header_icon = el.children[0].children[0];
+              $g_accordion_body.classList.add("hidden");
+              $g_accordion_header_icon.classList.remove("-rotate-180");
+            });
+            $accordion_header_icon.classList.add("-rotate-180");
+            $accordion_body.classList.remove("hidden");
+          }
+        });
+      });
+    </script>
+
+    <!-- Component Ends Here -->
+  </body>
+</html>

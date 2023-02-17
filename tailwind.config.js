@@ -9,7 +9,7 @@ module.exports = {
       colors: {
         "primary-yellow": "#e8e20c",
         "primary-blue": "#31A7E0",
-        "primary-dark": "#313D47",
+        "primary-dark": "#343a40",
         "primary-light": "#EBECEC",
       },
       maxWidth: {
