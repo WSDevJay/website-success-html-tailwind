@@ -87,7 +87,10 @@
 
 /* Faqs Content */
 .faqs-content {
-  @apply mb-2;
+  @apply mb-2 space-y-2;
+}
+.faqs-content ul {
+  @apply text-primary-yellow font-black text-base space-y-2 list-disc pl-6;
 }
 .faqs-content p {
   @apply text-primary-yellow font-black text-base;

@@ -209,7 +209,7 @@
 
     <main>
       <section
-        class="pt-[150px] pb-[148px] lg:pt-[200px] lg:pb-[158px] bg-gray-900 relative -- is-wave"
+        class="pt-[110px] sm:pt-[150px] pb-[110px] lg:pt-[200px] lg:pb-[158px] bg-gray-900 relative -- is-wave"
       >
         <div class="max-w-screen-base mx-auto px-4 md:px-8 relative">
           <div class="grid items-center grid-cols-12 gap-2 lg:gap-0">
@@ -223,19 +223,19 @@
               </figure>
             </div>
             <div class="col-span-full lg:col-span-8">
-              <div class="flex flex-col-reverse lg:flex-col gap-5">
+              <div class="flex flex-col-reverse gap-3 lg:flex-col lg:gap-5">
                 <div class="flex items-center gap-4">
                   <div class="lg:hidden">
                     <figure>
                       <img
-                        class="w-16 md:w-20"
+                        class="w-16 sm:w-20 md:w-24"
                         src="https://websitesuccess.mo.cloudinary.net/ws/images/team-pictures/caitlin-mccann.png?tx=c_scale,w_400"
                         alt="Louise Hopkins"
                       />
                     </figure>
                   </div>
                   <div
-                    class="flex flex-col w-full lg:flex-row lg:items-center lg:justify-between gap-1 lg:gap-2"
+                    class="flex flex-col w-full md:flex-row md:items-center md:justify-between gap-1 md:gap-2"
                   >
                     <!-- Author -->
                     <span
@@ -279,12 +279,12 @@
           </div>
         </div>
       </section>
-      <section class="pb-14 pt-[72px] relative -mt-20 -- curve">
-        <div class="max-w-screen-base mx-auto px-4 md:px-8">
+      <section class="pb-14 pt-[32px] sm:pt-[72px] relative -mt-20 -- curve">
+        <div class="max-w-screen-base mx-auto px-4 md:px-8 relative z-[10]">
           <div class="grid grid-cols-12 gap-6">
             <div class="col-span-full lg:col-span-4">
               <div
-                class="flex flex-col-reverse lg:flex-col gap-6 lg:gap-10 mb-2 lg:mb-0"
+                class="flex flex-col-reverse lg:flex-col gap-5 lg:gap-10 mb-2 lg:mb-0"
               >
                 <figure class="lg:mt-16">
                   <img
@@ -293,15 +293,23 @@
                     alt=""
                   />
                 </figure>
-                <a
-                  href=""
-                  class="px-3.5 py-2 bg-primary-blue text-white uppercase inline-block w-fit font-black rounded-full text-base !leading-none transition-colors hover:bg-primary-dark hover:text-primary-blue"
-                  >back</a
-                >
+                <div class="flex items-center justify-between gap-2 lg:block">
+                  <a
+                    href=""
+                    class="px-3.5 py-2 bg-primary-blue text-white uppercase inline-block w-fit font-black rounded-full text-base !leading-none transition-colors hover:bg-primary-dark hover:text-primary-blue"
+                    >back</a
+                  >
+                  <div class="lg:hidden">
+                    <span
+                      class="uppercase text-sm !leading-none sm:text-base text-white bg-primary-dark px-3 py-2 font-black rounded-full inline-block w-fit m-0.5"
+                      >SOCIAL MEDIA</span
+                    >
+                  </div>
+                </div>
               </div>
             </div>
             <div class="col-span-full lg:col-span-8">
-              <div class="mb-4 sm:mb-6">
+              <div class="mb-4 sm:mb-6 hidden lg:block">
                 <span
                   class="uppercase text-sm !leading-none sm:text-base text-white bg-primary-dark px-3 py-2 font-black rounded-full inline-block w-fit m-0.5"
                   >SOCIAL MEDIA</span
@@ -366,7 +374,7 @@
       <section class="relative z-[15] bg-white">
         <div class="max-w-screen-base mx-auto px-4 md:px-8">
           <div
-            class="border-t-2 border-primary-light pb-[130px] pt-[70px] lg:pb-[150px] lg:pt-[100px]"
+            class="border-t-2 border-primary-light pb-[130px] pt-[70px] lg:pb-[150px] lg:pt-[90px]"
           >
             <div class="flex justify-between items-center gap-2">
               <a
@@ -557,6 +565,133 @@
                   </p>
                 </div>
               </article>
+              <article data-accordion>
+                <div class="inline-flex items-start gap-2 py-2 cursor-pointer">
+                  <span
+                    class="transition-transform mt-0.5 text-primary-yellow text-lg xl:text-xl"
+                    data-accordion-icon
+                  >
+                    <span
+                      class="iconify"
+                      data-icon="fa-solid:chevron-circle-down"
+                    ></span>
+                  </span>
+                  <h3
+                    class="text-lg sm:text-xl !leading-tight uppercase text-white font-black"
+                  >
+                    Lorem ipsum dolor sit amet consectetur adipisicing?
+                  </h3>
+                </div>
+                <div class="faqs-content hidden">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Dolorem, quisquam quos temporibus dolores obcaecati voluptas
+                    magni pariatur minima harum reiciendis ratione incidunt
+                    corporis, hic nostrum, labore ad odit rem mollitia.
+                  </p>
+                </div>
+              </article>
+              <article data-accordion>
+                <div class="inline-flex items-start gap-2 py-2 cursor-pointer">
+                  <span
+                    class="transition-transform mt-0.5 text-primary-yellow text-lg xl:text-xl"
+                    data-accordion-icon
+                  >
+                    <span
+                      class="iconify"
+                      data-icon="fa-solid:chevron-circle-down"
+                    ></span>
+                  </span>
+                  <h3
+                    class="text-lg sm:text-xl !leading-tight uppercase text-white font-black"
+                  >
+                    Lorem ipsum dolor sit amet consectetur adipisicing?
+                  </h3>
+                </div>
+                <div class="faqs-content hidden">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Dolorem, quisquam quos temporibus dolores obcaecati voluptas
+                    magni pariatur minima harum reiciendis ratione incidunt
+                    corporis, hic nostrum, labore ad odit rem mollitia.
+                  </p>
+                </div>
+              </article>
+              <article data-accordion>
+                <div class="inline-flex items-start gap-2 py-2 cursor-pointer">
+                  <span
+                    class="transition-transform mt-0.5 text-primary-yellow text-lg xl:text-xl"
+                    data-accordion-icon
+                  >
+                    <span
+                      class="iconify"
+                      data-icon="fa-solid:chevron-circle-down"
+                    ></span>
+                  </span>
+                  <h3
+                    class="text-lg sm:text-xl !leading-tight uppercase text-white font-black"
+                  >
+                    Lorem ipsum dolor sit amet consectetur adipisicing?
+                  </h3>
+                </div>
+                <div class="faqs-content hidden">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Dolorem, quisquam quos temporibus dolores obcaecati voluptas
+                    magni pariatur minima harum reiciendis ratione incidunt
+                    corporis, hic nostrum, labore ad odit rem mollitia.
+                  </p>
+                  <ul>
+                    <li>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Veritatis unde suscipit necessitatibus maiores inventore
+                      eaque ullam laboriosam autem tenetur quam?
+                    </li>
+                    <li>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Veritatis unde suscipit necessitatibus maiores inventore
+                      eaque ullam laboriosam autem tenetur quam?
+                    </li>
+                    <li>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Veritatis unde suscipit necessitatibus maiores inventore
+                      eaque ullam laboriosam autem tenetur quam?
+                    </li>
+                  </ul>
+                </div>
+              </article>
+              <article data-accordion>
+                <div class="inline-flex items-start gap-2 py-2 cursor-pointer">
+                  <span
+                    class="transition-transform mt-0.5 text-primary-yellow text-lg xl:text-xl"
+                    data-accordion-icon
+                  >
+                    <span
+                      class="iconify"
+                      data-icon="fa-solid:chevron-circle-down"
+                    ></span>
+                  </span>
+                  <h3
+                    class="text-lg sm:text-xl !leading-tight uppercase text-white font-black"
+                  >
+                    Lorem ipsum dolor sit amet consectetur adipisicing?
+                  </h3>
+                </div>
+                <div class="faqs-content hidden">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Dolorem, quisquam quos temporibus dolores obcaecati voluptas
+                    magni pariatur minima harum reiciendis ratione incidunt
+                    corporis, hic nostrum, labore ad odit rem mollitia.
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Dolorem, quisquam quos temporibus dolores obcaecati voluptas
+                    magni pariatur minima harum reiciendis ratione incidunt
+                    corporis, hic nostrum, labore ad odit rem mollitia.
+                  </p>
+                </div>
+              </article>
             </div>
           </div>
         </div>
@@ -565,11 +700,11 @@
         class="relative pt-12 pb-4 -mt-[59px] relative z-[40] -- bg-clip-get-started"
       >
         <div class="max-w-[1000px] mx-auto px-4 md:px-8 relative z-10 -mt-16">
-          <div class="grid items-center grid-cols-12 gap-6">
+          <div class="grid items-center grid-cols-12 gap-6 md:gap-10">
             <div class="col-span-full md:col-span-4">
               <div class="text-center">
                 <img
-                  class="max-w-[200px] md:max-w-[266px] mx-auto w-full"
+                  class="max-w-[230px] md:max-w-[266px] mx-auto w-full"
                   src="https://websitesuccess.mo.cloudinary.net/ws/images/team-pictures/jay-faustino.png"
                   alt="Jay"
                 />
@@ -627,7 +762,9 @@
               <h4 class="uppercase text-2xl font-extrabold mb-3">Say Hello</h4>
               <ul class="space-y-1">
                 <li>
-                  <span class="inline-flex items-start gap-1.5 font-extrabold">
+                  <span
+                    class="inline-flex items-start gap-1.5 font-extrabold uppercase"
+                  >
                     <span class="mt-0.5">
                       <span class="iconify" data-icon="fa-solid:phone"></span>
                     </span>
@@ -635,7 +772,9 @@
                   </span>
                 </li>
                 <li>
-                  <span class="inline-flex items-start gap-1.5 font-extrabold">
+                  <span
+                    class="inline-flex items-start gap-1.5 font-extrabold uppercase"
+                  >
                     <span class="mt-0.5">
                       <span
                         class="iconify"
@@ -676,13 +815,13 @@
             class="flex flex-col md:flex-row items-center gap-3 md:justify-between"
           >
             <div>
-              <p class="uppercase text-xs font-black text-primary-blue">
+              <p class="uppercase text-sm font-black text-primary-blue">
                 © Website Success. All Rights Reserved.
               </p>
             </div>
             <div>
               <ul
-                class="flex items-center gap-2 [&_a]:text-base [&_a]:transition-colors [&_a]:text-primary-blue [&_a:hover]:text-primary-dark"
+                class="flex items-center gap-2 [&_a]:text-lg [&_a]:transition-colors [&_a]:text-primary-blue [&_a:hover]:text-primary-dark"
               >
                 <li>
                   <a href=""
